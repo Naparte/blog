@@ -68,9 +68,7 @@ function getFirstItemLink(treeArr) {
   return getFirstItemLink(firstitem.items);
 }
 
-// slice 临时隐藏一下面试相关内容
-
-export const nav = NavigationBar.slice(0, -1).map((item) => {
+export const nav = NavigationBar.map((item) => {
   if (item.link) {
     return item;
   }
